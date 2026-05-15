@@ -1,4 +1,27 @@
 # app/scrapers/config.py
+GranmmaData = {
+    "mundo": [
+        'https://www.granma.cu/mundo',
+        'g-regular-story'
+    ],
+    "cuba": [
+        'https://www.granma.cu/cuba',
+        'g-regular-story'
+    ],
+    "deportes": [
+        'https://www.granma.cu/deportes',
+        'g-regular-story'
+    ],
+    "cultura": [
+        'https://www.granma.cu/cultura',
+        'g-regular-story'
+    ],
+    "ciencia": [
+        'https://www.granma.cu/ciencia',
+        'g-regular-story'
+    ]
+}
+
 
 dataNews = {
     "politica": [
