@@ -1,4 +1,26 @@
+# Caché de Python
 __pycache__/
-exports/
 *.pyc
+*.pyo
+*.pyd
+
+# Archivos de datos y exportaciones locales
+exports/
 *.csv
+*.xlsx
+*.log
+
+# Entornos virtuales (¡Muy recomendado!)
+venv/
+.venv/
+env/
+ENV/
+
+# Configuraciones de editores y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración sensible (claves, tokens)
+.env
