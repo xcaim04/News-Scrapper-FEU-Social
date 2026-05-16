@@ -47,9 +47,13 @@ def wait_for_db(url: str, timeout: int = 60, interval: int = 5) -> bool:
 def parse_args():
     parser = argparse.ArgumentParser(description="Wait for PostgreSQL to be ready.")
     parser.add_argument("--timeout", type=int, default=60, help="Seconds to wait")
-    parser.add_argument("--interval", type=int, default=5, help="Retry interval in seconds")
+    parser.add_argument(
+        "--interval", type=int, default=5, help="Retry interval in seconds"
+    )
     parser.add_argument("--url", default=None, help="Optional DATABASE_URL override")
-    parser.add_argument("command", nargs=argparse.REMAINDER, help="Command to run after db is ready")
+    parser.add_argument(
+        "command", nargs=argparse.REMAINDER, help="Command to run after db is ready"
+    )
     return parser.parse_args()
 
 

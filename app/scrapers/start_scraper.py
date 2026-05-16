@@ -1,4 +1,3 @@
-
 import logging
 from datetime import datetime
 from typing import Any, Dict, List
@@ -40,7 +39,9 @@ def _save_article(session: Any, item: Dict) -> bool:
         existing.image_url = item.get("image_url", existing.image_url)
         existing.published_at = item.get("published_at", existing.published_at)
         existing.scraped_at = _parse_datetime(item.get("scraped_at"))
-        existing.comments_count = item.get("comments_count", existing.comments_count or 0)
+        existing.comments_count = item.get(
+            "comments_count", existing.comments_count or 0
+        )
         existing.categorias = item.get("categorias", existing.categorias)
         existing.source = item.get("source", existing.source)
         existing.categoria = item.get("categoria", existing.categoria)
